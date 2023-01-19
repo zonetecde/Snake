@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table id="game_table">
+        
+    </table>
+
+    <div id="game_information">
+        <h1 style="text-align: center;">SCORE :</h1>
+        <p id="score" style="text-align: center; font-size: 60px; padding: 0px; margin: 0px; font-weight: bold;">2</p>
+        <h2 style="text-align: center;">Meilleur score :</h1>
+        <p id="best-score" style="text-align: center; font-size: 40px; padding: 0px; margin-top: -15px;">2</p>
+    </div>
+
+    <div style="background-color: rgb(65, 90, 64); visibility: hidden; " id="lose-menu">
+        <h1 style="text-align: center; margin-top: 35px; color: rgb(197, 196, 187); font-size: 40px;">Oh non, c'est perdu !</h1>
+        <h2 id="new_best_score" style="margin-top:-20px; text-align: center; color: rgb(180, 7, 7); visibility: hidden;">Nouveau meilleur score!</h2>
+        <p id="score_lose" style="text-align: center; font-size: 35px; color: rgb(58, 4, 20); margin-top: 30px; ">Score : </p>
+        
+        <input id="play-again-button" onclick="window.location.reload();" type="button" value="Rejouer" style="margin-top: 85px;">
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

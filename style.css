@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+
+body{
+    margin: 0px;
+    background-color: rgb(137, 145, 156);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    border: solid 5px black;
+}
+
+tr, td{
+    border: solid 0px black;
+    text-align: center;
+    vertical-align:middle;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#game_table {
+    position: absolute;
+    top: 50%; /* pour centrer en verticale */
+    transform: translateY(-50%); /* pour ajuster la position en fonction de la taille de la table */
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.apple {
+    background-color: #db683d; 
+    width:70%; 
+    height:70%;
+}
+
+#lose-menu{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    z-index: 100;
+    
+    /* centre horizontalement*/
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 30%;
+
+
+    border-radius: 50px;
+    border: solid 5px black;
+}
+
+#play-again-button{
+    /* centre horizontalement*/
+    position: absolute;
+    margin: auto;
+    display: block;
+    bottom: 0px;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    background-color: bisque;
+    width: 200px; height: 60px; font-size: 20px;
+}
+
+#play-again-button:hover{
+    background-color: #9e717a;
+    cursor: pointer;
+    
+}
+
